@@ -3,18 +3,12 @@
 class Student {
     public $name;
     public $student_id;
-    public $date_of_birth;
-    public $gender;
-    public $address;
-    public $gpa;
+    public $age;
 
-    public function __construct($name, $student_id, $date_of_birth, $gender, $address, $gpa) {
+    public function __construct($name, $student_id, $age) {
         $this->name = $name;
         $this->student_id = $student_id;
-        $this->date_of_birth = $date_of_birth;
-        $this->gender = $gender;
-        $this->address = $address;
-        $this->gpa = $gpa;
+        $this->date_of_birth = $age;
     }
 }
 
@@ -45,18 +39,10 @@ class StudentDAO {
                 if ($name) {
                     $student->name = $name;
                 }
-                if ($date_of_birth) {
-                    $student->date_of_birth = $date_of_birth;
+                if ($age) {
+                    $student->age = $age;
                 }
-                if ($gender) {
-                    $student->gender = $gender;
-                }
-                if ($address) {
-                    $student->address = $address;
-                }
-                if ($gpa) {
-                    $student->gpa = $gpa;
-                }
+
                 return true;
             }
         }
