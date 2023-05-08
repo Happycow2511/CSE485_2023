@@ -33,7 +33,7 @@ class StudentDAO {
         return $this->students;
     }
 
-    public function update_student($student_id, $name=null, $date_of_birth=null, $gender=null, $address=null, $gpa=null) {
+    public function update_student($student_id, $name=null, $age=null) {
         foreach ($this->students as $student) {
             if ($student->student_id == $student_id) {
                 if ($name) {
