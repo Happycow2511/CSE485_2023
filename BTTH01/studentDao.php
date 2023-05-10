@@ -1,18 +1,5 @@
 <?php
-    // Lớp Sinh viên
-class Student {
-    public $name;
-    public $student_id;
-    public $age;
-
-    public function __construct($name, $student_id, $age) {
-        $this->name = $name;
-        $this->student_id = $student_id;
-        $this->date_of_birth = $age;
-    }
-}
-
-// Lớp Danh sách Sinh viên (StudentDAO)
+    //StudentDAO
 class StudentDAO {
     public $students = [];
 
